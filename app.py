@@ -6,6 +6,6 @@ from cdkworkshop.cdkworkshop_stack import CdkworkshopStack
 
 
 app = core.App()
-CdkworkshopStack(app, "cdkworkshop")
+CdkworkshopStack(app, "cdkworkshop", env={'region': 'ap-northeast-2'})
 
 app.synth()
